@@ -61,6 +61,7 @@ main {
 }
 main h1 {
   text-align: center;
+  grid-column: 1 / span 2;
 }
 
 .card {
