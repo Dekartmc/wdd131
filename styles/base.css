@@ -1,0 +1,115 @@
+:root{
+  --primary-color: #008E97;
+	--secondary-color: #5ED486;
+	--accent1-color: #002623;
+	--accent2-color: #A5E887;
+	--heading-font: "Bebas Neue", sans-serif;
+	--body-font: "Open Sans", sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: var(--body-font);
+	color: var(--accent1-color);
+}
+
+#course-title {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+nav {
+	background-color: var(--accent1-color);
+	margin: 0 auto;
+	max-width: 1200px;
+}
+nav ul {
+  display: flex;
+	list-style-type: none;
+  justify-content: center;
+}
+nav a {
+	display: block;
+	color: var(--accent2-color);
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: overline;
+}
+
+.active {
+	color: var(--secondary-color);
+}
+
+main {
+  max-width: 1200px;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+main h1 {
+  text-align: center;
+  grid-column: 1 / span 2;
+}
+
+.card {
+  border: 1px solid var(--accent1-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card h2 {
+  padding: 10px 5px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: var(--accent1-color);
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 1rem;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.about-grid h3{
+  text-align: center;
+  text-decoration: underline;
+  margin: 10px 5px;
+}
+.profile {
+  max-width: 150px;
+  border-radius: 5px;
+}
+.flag {
+  max-width: 100px;
+  margin-right: 10px;
+  float: left;
+}
+.menu-list {
+  padding: 0.5rem;
+}
+.menu-list li {
+  padding: 2px;
+  list-style-position: inside;
+}
+
+footer {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  color: var(--accent2-color);
+  background-color: var(--accent1-color);
+}
